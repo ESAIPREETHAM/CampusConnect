@@ -1,0 +1,81 @@
+/* Company listing CSS */
+
+.company-listing {
+	margin: 50px auto;
+	max-width: 800px;
+	padding: 0 20px;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+.company-tab {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.company-tab li {
+	margin: 10px 0;
+}
+
+.company-name {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+}
+
+.company-name:hover {
+	color: #0066cc;
+}
+
+.job-tab {
+	display: none;
+	margin-left: 20px;
+	padding-left: 20px;
+	border-left: 1px solid #ccc;
+}
+
+.job-name {
+	display: block;
+	font-size: 16px;
+	color: #333;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.job-name:hover {
+	color: #0066cc;
+}
+
+.job-details {
+	display: none;
+	margin-left: 20px;
+	padding-left: 20px;
+	border-left: 1px solid #ccc;
+}
+
+.job-details p {
+	margin: 10px 0;
+}
+
+.apply-button {
+	background-color: #0066cc;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.apply-button:hover {
+	background-color: #004c99;
+}
+
+.active {
+	display: block;
+}

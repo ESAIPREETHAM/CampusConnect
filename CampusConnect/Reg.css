@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+   
+    background-image: linear-gradient(to top, rgba(12, 26, 15, 0) 40%, rgba(255, 255, 255, 0.5) 70%, rgb(255, 255, 255) 100%), url('5210523.jpg');
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-color 0.5s ease-in-out;
+    background-color: white;
+  }
+
+  
+  body.white {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+  }
+  
+
+.container {
+    width:80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+}
+
+.form-wrapper {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 115%;
+    height: 100%;
+    padding: 30px 30px 30px 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form .btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.form .btn:hover {
+    transform: scale(1.1);
+}
+
+.form .btn:active {
+    transform: scale(0.9);
+}
+
+.form .btn.red {
+    background-color: red;
+}
+
+.form .btn.green {
+    background-color: green;
+}
+
+.form p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.form .switch-form {
+    
+    color: #007bff;
+    cursor: pointer;
+}
+
+.login-form {
+  width: 115%;
+    display: block;
+}
+
+.signup-form {
+    display: none;
+}
+
+.about-us-container {
+  padding: 20px;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 50px;
+  margin: 0 auto;
+  height: 300px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(300px);
+}
+
+.about-us-container.active {
+  transform: translateY(-100);
+}
+
+.about-us-container h4 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.about-us-container p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.about-us-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.about-us-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
+
+/* CSS code for radio buttons */
+.radio-buttons {
+    margin-bottom: 15px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  }
+  .radio-buttons label {
+    display: inline-flex;
+    margin-right: 30px;
+    text-size-adjust: 10px;
+  }
+  
+  
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .language-switcher select {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+  }
+  
+  .language-switcher label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .language-switcher a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .language-switcher a:hover {
+    text-decoration: underline;
+  }
+  .header2 {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
+  

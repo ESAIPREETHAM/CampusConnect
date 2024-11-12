@@ -1,0 +1,112 @@
+/* Box container */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-image: url("pexels-matheus-viana-2414036.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(202, 202, 202, 0.2); 
+}
+
+
+/* Hover effect */
+.container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Job role details */
+#job_roles {
+  margin-top: 20px;
+}
+
+/* Remove job role button */
+.remove_job_role {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(154, 145, 136, 1);
+  
+}
+
+/* Remove job role button hover effect */
+.remove_job_role:hover {
+  background-color: #b71c1c;
+  box-shadow: 0px 0px 10px rgb(184, 18, 18);
+}
+
+/* Form label */
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* Form input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+/* Form input fields focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"],
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"] {
+  background-color: #ffffff;
+  color: #FFFFFF;
+  border: 0px 0px 10px rgba(59, 46, 5, 0.5);
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(255, 193, 7, 0.5);
+}
+
+button[type="submit"]:hover {
+  background-color: #F44336;
+  box-shadow: 0px 0px 20px rgba(244, 67, 54, 0.7);
+}
+
+
+/* Error message */
+.error {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Success message */
+.success {
+  color: #4caf50;
+  font-size: 14px;
+  margin-top: 5px;
+}
